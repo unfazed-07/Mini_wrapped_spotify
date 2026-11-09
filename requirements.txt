@@ -1,0 +1,6 @@
+streamlit
+spotipy>=2.26.0
+google-genai
+python-dotenv
+pandas
+groq
