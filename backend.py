@@ -90,7 +90,7 @@ def get_oauth() -> SpotifyOAuth:
     return SpotifyOAuth(
         client_id=os.getenv("SPOTIPY_CLIENT_ID"),
         client_secret=os.getenv("SPOTIPY_CLIENT_SECRET"),
-        redirect_uri=os.getenv("SPOTIPY_REDIRECT_URI", "http://127.0.0.1:8501"),
+        redirect_uri=os.getenv("SPOTIPY_REDIRECT_URI", "https://miniwrappedspotify.streamlit.app/"),
         scope=SCOPES,
         cache_handler=MemoryCacheHandler(),
         show_dialog=True,  # lets the user pick the account after logging out
